@@ -3,11 +3,13 @@ weather = Weather()
 loc=input("enter the location ")
 location = weather.lookup_by_location(loc)
 condition = location.condition()
-
+a=[]
 # Get weather forecasts for the upcoming days.
 for forecasts in location.forecast():
-    print (forecasts['text'])
-    print (forecasts['date'])
-    print (forecasts['high'])
-    print (forecasts['low'])
-
+  b=[]    
+  b.append(forecasts['text'])
+  b.append(forecasts['date'])
+  b.append(forecasts['high'])
+  b.append(forecasts['low'])
+  a.append(b)
+print(a)
