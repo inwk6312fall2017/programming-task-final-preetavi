@@ -18,8 +18,8 @@ for forecasts in location.forecast():
    a.append(b)
    i+=1
 for i in range(len(a)):
-# j=a[i][2]
- if int(a[i][2])>highestTemp:
+ j=int(a[i][2])
+ if j>highestTemp:
   highestTemp=j
-  hottestDay=a[1]
+  hottestDay=a[i][1]
 print("hottest day is  ",hottestDay," with a temperature of ",highestTemp)
