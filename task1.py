@@ -77,3 +77,14 @@ for i in list1:
 result3.append(longestWord)
 result3.append(book3length)
 print("longest word in book3 is ",result3)
+ 
+
+finalResult=[]
+if result1[1]>result2[1]:
+ finalResult.extend(result1)
+elif result2[1]>result3[1]:
+ finalResult.extend(result2)
+else:
+ finalResult.extend(result3)
+
+print("longest word in all 3 books is ",finalResult)
