@@ -1,4 +1,5 @@
-from weather import Weather()
+from weather import Weather
+weather = Weather()
 loc=input("enter the location ")
 location = weather.lookup_by_location(loc)
 condition = location.condition()
