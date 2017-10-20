@@ -17,4 +17,8 @@ for forecasts in location.forecast():
    b.append(forecasts['low'])
    a.append(b)
    i+=1
-
+rainyDays=[]
+for i in range(5):
+ if "rain" in a[i][0]:
+  rainyDays.append(a[i][1]
+print("It rains on: ",rainyDays)
