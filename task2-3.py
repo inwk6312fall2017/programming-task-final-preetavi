@@ -20,6 +20,8 @@ for forecasts in location.forecast():
 rainyDays=[]
 for i in range(5):
  if "Showers" in a[i][0]:
-  rainyDays.append(a[i][1]
-if rainyDays is None
-print("It rains on: ",rainyDays)
+  rainyDays.append(a[i][1])
+if len(rainyDays)==0:
+ print("It won't rain fornext 5 days")
+else:
+ print("It rains on: ",rainyDays)
