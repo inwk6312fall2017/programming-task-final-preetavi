@@ -5,8 +5,8 @@ location = weather.lookup_by_location(loc)
 condition = location.condition()
 a=[]
 # Get weather forecasts for the upcoming days.
-highestTemp=0
-hottestDay=0
+lowestTemp=100
+coolestDay=0
 i=0
 for forecasts in location.forecast():
  if i<5:
@@ -18,10 +18,10 @@ for forecasts in location.forecast():
    a.append(b)
    i+=1
 
-for i in range(len(a)):
- j=int(a[i][2])
- if j>highestTemp:
-  highestTemp=j
-  hottestDay=a[i][1]
-print("hottest day is  ",hottestDay," with a temperature of ",highestTemp)
+for i in range(5):
+ j=int(a[i][3])
+ if j<lowestTemp:
+  lowestTemp=j
+  coolestDay=a[i][1]
+print("coolest day is  ",coolestDay," with a temperature of ",lowestTemp)
 

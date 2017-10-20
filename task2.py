@@ -17,7 +17,7 @@ for forecasts in location.forecast():
    b.append(forecasts['low'])
    a.append(b)
    i+=1
-for i in range(len(a)):
+for i in range(5):
  j=int(a[i][2])
  if j>highestTemp:
   highestTemp=j
