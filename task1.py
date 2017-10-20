@@ -26,12 +26,12 @@ for i in list1:
   longestWord=i 
 result1.append(longestWord)
 result1.append(book1length)
-print(result1)
+print("longest word in book1 is ",result1)
 
 
 
 
-"""
+
 book2=open("Book2.txt")
 dict2={}
 for line2 in book2:
@@ -43,7 +43,17 @@ for line2 in book2:
    dict2[i]=1
   else:
    dict2[i]+=1
-print(dict2)
+for i in dict2:
+ list1.append(i)
+for i in list1:
+ length=len(i)
+ if length>book2length:
+  book2length=length
+  longestWord=i 
+result2.append(longestWord)
+result2.append(book2length)
+print("longest word in book2 is ",result2)
+
 
 
 book3=open("Book3.txt")
@@ -57,6 +67,13 @@ for line1 in book3:
    dict3[i]=1
   else:
    dict3[i]+=1
-print(dict3) 
-
-"""
+for i in dict3:
+ list1.append(i)
+for i in list1:
+ length=len(i)
+ if length>book3length:
+  book3length=length
+  longestWord=i 
+result3.append(longestWord)
+result3.append(book3length)
+print("longest word in book3 is ",result3)
